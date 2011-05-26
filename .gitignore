@@ -23,6 +23,8 @@ obj/
 [Bb]in
 [Dd]ebug*/
 [Rr]elease*/
+*.vsmdi
+*.testsettings
 
 #Tooling
 _ReSharper*/

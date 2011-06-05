@@ -45,7 +45,8 @@
     </CodeAnalysisDependentAssemblyPaths>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="NotThreadSafeTest.cs" />
+    <Compile Include="FunctionsAsCitizensTest.cs" />
+    <Compile Include="ImmutabilityTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="MutableVsImmutableStateTest.cs" />
   </ItemGroup>

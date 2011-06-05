@@ -10,11 +10,11 @@ type PresentationKeeper(name: string, employer : string) =
 let Rami = PresentationKeeper("Rami Karjalainen", "Reaktor")
 let Tuomas = PresentationKeeper("Tuomas Hietanen", "Basware")
 
-let topics = [ (2, "Funktionaalinen ohjelmointi C#-näkökulmasta, LINQ:n toimintaperiaatteet", Tuomas);
-               (1, "Funktionaalisen ohjelmoinnin yleiskatsaus", Rami);
-               (3, "F#:n käyttö yhdessä C#:n kanssa", Rami);
-               (4, "Pari F#-esimerkkiä, peruskoodausta", Rami);
-               (5, "F# vs C# esimerkki", Tuomas) ]
+let topics = [ (2, "Functional programming from c# perspective, Linq principles", Tuomas);
+               (1, "Functional programming in general", Rami);
+               (3, "F# examples: ’basic’ stuff", Rami);
+               (4, "F# and C# interoperability", Rami);
+               (5, "F# vs. C#", Tuomas) ]
 
 let formatTopic topic keeper = String.Format ("{0} ({1})", topic, keeper.ToString())
 

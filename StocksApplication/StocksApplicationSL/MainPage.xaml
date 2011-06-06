@@ -55,14 +55,19 @@
                     </i:EventTrigger>
                 </i:Interaction.Triggers>
                 <sdk:DataGrid x:Name="Lista" 
-					ItemsSource="{Binding Rates}" Height="208" Width="466" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+					ItemsSource="{Binding Rates}" Height="208" Width="466" HorizontalAlignment="Left" VerticalAlignment="Top" AutoGenerateColumns="False">
+                    <sdk:DataGrid.Columns>
+                        <sdk:DataGridTextColumn Header="Date" Binding="{Binding Date, StringFormat='dd.MM.yyyy'}"/>
+                        <sdk:DataGridTextColumn Header="Rate" Binding="{Binding Rate, StringFormat='c'}"/>
+                    </sdk:DataGrid.Columns>
+                </sdk:DataGrid>
                 <StackPanel Orientation="Horizontal">
                     <TextBlock TextWrapping="Wrap" Text="Max date and value:" Margin="0" d:LayoutOverrides="Width" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                    <TextBlock x:Name="MaxDate" TextWrapping="Wrap" Text="{Binding MaxDate, Mode=OneWay}" Margin="0" d:LayoutOverrides="Width" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="MaxDate" TextWrapping="Wrap" Text="{Binding MaxDate, Mode=OneWay, StringFormat='dd.MM.yyyy'}" Margin="0" d:LayoutOverrides="Width" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                     <TextBlock TextWrapping="Wrap" Text=": " Margin="0" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                    <TextBlock x:Name="MaxValue" TextWrapping="Wrap" Text="{Binding MaxValue, Mode=OneWay}" Margin="0" d:LayoutOverrides="Width" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-                    <TextBlock TextWrapping="Wrap" Text=" Average value:" Margin="0" d:LayoutOverrides="Width" HorizontalAlignment="Left" VerticalAlignment="Top"/>
-                    <TextBlock x:Name="AvgClose" TextWrapping="Wrap" Text="{Binding AvgClose, Mode=OneWay}" Margin="0" d:LayoutOverrides="Width" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="MaxValue" TextWrapping="Wrap" Text="{Binding MaxValue, Mode=OneWay, StringFormat='c'}" Margin="0" d:LayoutOverrides="Width" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                    <TextBlock TextWrapping="Wrap" Text=" Average value: " Margin="0" d:LayoutOverrides="Width" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <TextBlock x:Name="AvgClose" TextWrapping="Wrap" Text="{Binding AvgClose, Mode=OneWay, StringFormat='c'}" Margin="0" d:LayoutOverrides="Width" HorizontalAlignment="Left" VerticalAlignment="Top"/>
                 </StackPanel>
             </StackPanel>
         </StackPanel>

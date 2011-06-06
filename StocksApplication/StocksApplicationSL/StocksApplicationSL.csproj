@@ -114,9 +114,6 @@
     <DesignData Include="SampleData\MainViewModelSampleData.xaml">
       <Generator>MSBuild:MarkupCompilePass1</Generator>
     </DesignData>
-    <DesignData Include="SampleData\MainViewModelSampleData1.xaml">
-      <Generator>MSBuild:MarkupCompilePass1</Generator>
-    </DesignData>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
   <ProjectExtensions>

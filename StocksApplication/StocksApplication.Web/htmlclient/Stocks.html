@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+   <title>Stocks page</title>
+   <meta charset="utf-8" />
+</head>
+<body>
+   <div id="stockquery">
+       <form id="data" method="get" action="">
+           <fieldset>
+               <label for="symbol">Symbol:</label>
+               <input type="text" name="symbol" id="symbol" placeholder="ex: MSFT" class="required">
+
+               <label for="DateFrom">Date from:</label>
+               <input type="text" name="DateFrom" id="DateFrom" placeholder="ex: dd.mm.yyyy" class="required">
+
+               <label for="DateTo">Date to:</label>
+               <input type="text" name="DateTo" id="DateTo" placeholder="ex: dd.mm.yyyy" class="required">
+
+               <input type="button" name="submit" id="submit" value="Get" class="button"/>
+           </fieldset>
+       </form>
+   </div>
+   <div id="stockresult">
+   </div>
+   <script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+   <script type="text/javascript" src="json2.min.js"></script>
+   <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
+

@@ -13,10 +13,11 @@ type StockQuote = {
     }
 
 let public MakeUrl symbol (dfrom:DateTime) (dto:DateTime) = 
-            new Uri("http://ichart.finance.yahoo.com/table.csv?s=" + symbol +
-               "&e=" + dto.Day.ToString() + "&d=" + dto.Month.ToString() + "&f=" + dto.Year.ToString() +
-               "&g=d&b=" + dfrom.Day.ToString() + "&a=" + dfrom.Month.ToString() + "&c=" + dfrom.Year.ToString() +
-               "&ignore=.csv")
+    let monthfix (d:DateTime)= (d.Month-1).ToString()
+    new Uri("http://ichart.finance.yahoo.com/table.csv?s=" + symbol +
+        "&e=" + dto.Day.ToString() + "&d=" + monthfix(dto) + "&f=" + dto.Year.ToString() +
+        "&g=d&b=" + dfrom.Day.ToString() + "&a=" + monthfix(dfrom) + "&c=" + dfrom.Year.ToString() +
+        "&ignore=.csv")
 
 let internal fetch (url : Uri) = 
     let req:HttpWebRequest = downcast WebRequest.Create (url)
@@ -32,7 +33,7 @@ let internal decompose (response:string) =
     |> List.map (split ',') 
 
 let internal reformat (sel) =
-    let parseDate d = DateTime.ParseExact(d, "yyyy-mm-dd", CultureInfo.InvariantCulture)
+    let parseDate d = DateTime.ParseExact(d, "yyyy-MM-dd", CultureInfo.InvariantCulture)
     let parseRate r = Double.Parse(r, CultureInfo.GetCultureInfo("en-US"))
     let focus (l:string list) = { Date = parseDate l.[0]; Rate = parseRate l.[4] }
     Seq.skip 1 sel |> Seq.map focus

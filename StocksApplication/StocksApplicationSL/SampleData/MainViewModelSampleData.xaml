@@ -1,0 +1,1 @@
+﻿<StocksViewModel:MainViewModel xmlns:StocksViewModel="clr-namespace:StocksViewModel;assembly=StocksApplicationViewModel" AvgClose="689.33" FromDate="06/06/2011 02:38:56" MaxValue="146.19" MaxDate="06/06/2011 02:38:56" Symbol="MSFT" ToDate="06/06/2011 02:38:56"/>

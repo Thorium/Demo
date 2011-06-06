@@ -1,0 +1,1 @@
+<StocksViewModel:MainViewModel xmlns:StocksViewModel="clr-namespace:StocksViewModel;assembly=StocksApplicationViewModel" AvgClose="828.4" FromDate="06/06/2011 02:55:24" MaxValue="175.79" MaxDate="06/06/2011 02:55:24" Symbol="Nam maecenas aenean aliquam integer" ToDate="06/06/2011 02:55:24"/>

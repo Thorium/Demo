@@ -1,0 +1,69 @@
+
+This is technical demo to apply F-Sharp (F#) language in real world application. 
+This application is close to real world enterprise application (with very optimal solutions, at least in 2011).
+
+The function of this application is to get Stock Quote Data and Historical Stock Prices from Yahoo Finance
+
+
+Architecture visaul presentation: Architecture.pptx
+
+There are two web user interfaces: 
+1. Silverlight 5.0 MVVM made with Expression Blend
+   - Silverlight F# 2.0 ViewModel and client logics dll
+2. HTML 5.0 + jQuery 1.6.1 + Javascript (Ajax)
+
+Those both uses the same underlying WCF REST JSON WebService.
+The WebService has both accesspoints, JSON and SOAP, but JSON is used.
+
+The WebService uses F# 2.0 business logics.
+
+
+Client:
+StocksApplicationSL - Silverlight XAML application
+StocksApplicationViewModel - Silverlight F# Library
+
+Server:
+StocksApplication.Web - Website/application, contains StocksService.svc-webservice and html-client
+StocksServiceLogics - F# Library
+
+StocksApplicationVS2010 should work with VS2010 and with Blend. I made another just becaus Blend is still Beta.
+
+
+
+What you need to use this software (is all the latest patches...):
+
+- Visual Studio 2010 SP1
+
+- Microsoft Expression Blend Preview for Silverlight 5:
+http://www.microsoft.com/downloads/en/details.aspx?FamilyID=22feb67c-4f65-4ced-97cf-5f8ada296445&displaylang=en
+
+- Microsoft Silverlight 4 Tools for Visual Studio 2010
+If you have problems with this, you should extract the package (with 7zip) and install FSharpRuntimeSL4.msi
+http://www.microsoft.com/downloads/en/details.aspx?FamilyID=b3deb194-ca86-4fb6-a716-b67c2604a139
+
+- Silverlight 5 Beta SDK
+http://www.microsoft.com/downloads/en/details.aspx?FamilyID=aa178343-923b-4c15-b1ba-1a49c4f2a4ba
+
+- Microsoft Silverlight 5 Beta Tools for Visual Studio 2010 Service Pack 1
+http://www.microsoft.com/downloads/en/details.aspx?FamilyID=41c85cc4-de12-4bdb-a60f-f120266e9780
+
+- Update to the F# to use with Silverlight 5.0:
+http://www.microsoft.com/downloads/en/details.aspx?FamilyID=f8c623ae-aef6-4a06-a185-05f59be47d67&displaylang=en
+- More info: http://blogs.msdn.com/b/fsharpteam/archive/2011/04/22/update-to-the-f-2-0-free-tools-release-corresponding-to-visual-studio-2010-sp1-april-2011-ctp.aspx
+
+- F# PowerPack
+http://fsharppowerpack.codeplex.com/
+
+- Windows Update? ;-)
+
+
+Further development of this application is managed in GitHub: https://github.com/Thorium
+
+
+You are free to use this as an architectural reference application. :-)
+(Lisence: LGPLv3)
+
+Support:
+http://www.meetup.com/FSharpHelsinki/messages/boards/forum/1395972
+
+

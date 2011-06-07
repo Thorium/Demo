@@ -3,7 +3,7 @@ using Xunit;
 
 namespace UnitTests
 {
-    public class NotThreadSafeTest
+    public class ImmutabilityTest
     {
         [Fact]
         public void ImmutableListAndObject()

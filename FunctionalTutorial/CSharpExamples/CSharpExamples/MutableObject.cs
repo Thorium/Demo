@@ -9,6 +9,5 @@
             CallCount++;
             return CallCount;
         }
-
     }
 }

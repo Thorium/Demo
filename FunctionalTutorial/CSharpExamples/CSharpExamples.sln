@@ -12,6 +12,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
 	EndProjectSection
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "PresisDemo", "PresisDemo\PresisDemo.fsproj", "{1996207F-219B-4C84-9F9B-02B3144E65DC}"
+EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = CSharpExamples.vsmdi
@@ -45,6 +47,16 @@ Global
 		{82F39691-5CA0-4767-B23A-C27902748649}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
 		{82F39691-5CA0-4767-B23A-C27902748649}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{82F39691-5CA0-4767-B23A-C27902748649}.Release|x86.ActiveCfg = Release|Any CPU
+		{1996207F-219B-4C84-9F9B-02B3144E65DC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1996207F-219B-4C84-9F9B-02B3144E65DC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1996207F-219B-4C84-9F9B-02B3144E65DC}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{1996207F-219B-4C84-9F9B-02B3144E65DC}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{1996207F-219B-4C84-9F9B-02B3144E65DC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{1996207F-219B-4C84-9F9B-02B3144E65DC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1996207F-219B-4C84-9F9B-02B3144E65DC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1996207F-219B-4C84-9F9B-02B3144E65DC}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{1996207F-219B-4C84-9F9B-02B3144E65DC}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{1996207F-219B-4C84-9F9B-02B3144E65DC}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

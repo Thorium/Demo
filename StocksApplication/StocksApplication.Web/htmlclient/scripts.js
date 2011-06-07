@@ -1,4 +1,4 @@
-window.onload = function()
+$(document).ready(function() 
 {
     //Debug:
     function concatObject(obj) {
@@ -63,6 +63,6 @@ window.onload = function()
             error: function(res){alert("Communication error...");}
         });
     });
-}
+});
 
 

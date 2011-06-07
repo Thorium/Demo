@@ -56,6 +56,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ClientBin\StocksApplicationSL.xap" />
+    <Content Include="htmlclient\jquery-1.6.1.min.js" />
+    <Content Include="htmlclient\json2.min.js" />
+    <Content Include="htmlclient\scripts.js" />
+    <Content Include="htmlclient\Stocks.html" />
     <Content Include="Silverlight.js" />
     <Content Include="StocksApplicationSLTestPage.aspx" />
     <Content Include="StocksApplicationSLTestPage.html" />

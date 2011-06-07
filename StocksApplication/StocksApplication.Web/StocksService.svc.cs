@@ -24,15 +24,13 @@ namespace StocksApplication.Web
             Contract.Assert(todate <= DateTime.Now, "Future not allowed yet...");
 
             var uri = Stocks.MakeUrl(quote, fromdate, todate);
-            var result = Enumerable.Empty<Stocks.StockQuote>();
 
             try { 
-                result = Stocks.GetResult(uri);
+                return Stocks.GetResult(uri);
             }catch(System.Net.WebException){
                 //throw;
-                result = Enumerable.Repeat(new Stocks.StockQuote(todate, -1.0), 1);
+                return Enumerable.Repeat(new Stocks.StockQuote(todate, -1.0), 1);
             }
-            return result;
         }
         // example: http://localhost:49624/StocksService.svc/Symbol/MSFT/20100905/20100910
     }

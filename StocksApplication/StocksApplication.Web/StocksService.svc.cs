@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Diagnostics.Contracts;
 using System.Globalization;
+using System.Linq;
 using System.ServiceModel;
 using System.ServiceModel.Web;
-using System.Linq;
 
 namespace StocksApplication.Web
 {

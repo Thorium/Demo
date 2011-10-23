@@ -1,0 +1,35 @@
+This same little program is implemented in three different languages:
+ + F# (Program.fs)
+ + IronPython (Program.py)
+ + C# (Program.cs)
+
+This program the .NET-Framework and LINQ-to-XML.
+It has been done using functional programming and lambdas.
+
+The functionality is:
+1. Read all .csproj-files (c#-project) from a directory
+2. Find OutputPaths and if the project is Silverlight or not
+3. Show info to console
+
+Both Python and F# was pretty good:
+When developing this (with Visual Studio 2010) they had Interactive (REPL-loop) 
+mode to run functions partially. C# doesn't so I have to go to separate 
+unit test files to test the program. So, this was much faster to make with 
+F# and Python than C#.
+
+However, I think that Python did have minor problems:
+- Python didn't have monadic bind (F# ">>") out-of-the-box.
+- Also I think Python syntax with list operations is somehow weird and un-natural:
+
+I described the steps (1, 2, 3) but in Python I have to code them as (3, 2, 1). 
+
+C#: GetFiles().Select(GetProjectInfo).ToList().ForEach(ShowInfo);
+
+F#: getFiles |> Seq.map (getProjectInfo) |> Seq.iter(showInfo)
+
+Python: map(showInfo, map(getProjectInfo, getFiles()))
+
+
+As a result, with Python you can't clearly see that this style of
+declarative programming is better than iterative (for-loops).
+

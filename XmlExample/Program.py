@@ -13,7 +13,7 @@ def xn(ns,s):
     return XName.Get(s,ns)
  
 def getFiles():
-    return Directory.GetFiles(r'd:\tfs2010_P2P\Matching Smart Client\main\Src', '*.csproj', SearchOption.AllDirectories)
+    return Directory.GetFiles(r'c:\projects', '*.csproj', SearchOption.AllDirectories)
  
 def getProjectInfo(fname):
     xml = XDocument.Load(fname)

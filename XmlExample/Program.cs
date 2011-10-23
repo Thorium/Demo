@@ -10,7 +10,7 @@ namespace ConsoleApplication16
     {
         public static IEnumerable<string> GetFiles()
         {
-            return Directory.GetFiles(@"d:\tfs2010_P2P\Common\", "*.csproj", SearchOption.AllDirectories);
+            return Directory.GetFiles(@"c:\projects\", "*.csproj", SearchOption.AllDirectories);
         }
 
         public static Tuple<string, bool, IEnumerable<string>> GetProjectInfo(string fname)

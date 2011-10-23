@@ -4,7 +4,7 @@ open System
 open System.Xml.Linq
 open System.IO
 
-let getFiles = Directory.GetFiles(@"c:\projects\", "*.csproj", SearchOption.AllDirectories)
+let getFiles = Directory.GetFiles(@"c:\projects", "*.csproj", SearchOption.AllDirectories)
                |> Array.toSeq
  
 let getProjectInfo (fname:string) = 

@@ -1,4 +1,3 @@
-
 This is technical demo to apply F-Sharp (F#) language in real world application. 
 This application is close to real world enterprise application (with very optimal solutions, at least in 2011).
 
@@ -67,3 +66,21 @@ Support:
 http://www.meetup.com/FSharpHelsinki/messages/boards/forum/1395972
 
 
+----------------------------------------------------------------------------------
+
+By default, this is old Visual Studio 2010 project.
+
+
+ To get this work with Visual Studio 2012:
+
+1) Download new version of "PowerPack for FSharp 3.0 + .NET 4.x + VS2012":
+http://fsharppowerpack.codeplex.com/releases
+
+2) Open with VS2012, will convert with the upgrade wizard
+
+3) Update StocksApplicationViewModel project to Silverlight5
+
+4) Update the two references: FSharp.Core.dll and FSharp.PowerPack.dll, here are the default locations:
+
+C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\3.0\Runtime\.NETPortable\FSharp.Core.dll 
+C:\Program Files (x86)\FSharpPowerPack-4.0.0.0\Silverlight\v5.0\FSharp.PowerPack.dll

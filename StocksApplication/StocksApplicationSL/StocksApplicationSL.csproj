@@ -66,7 +66,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="FSharp.Core">
-      <HintPath>C:\Program Files (x86)\Microsoft F#\Silverlight\Libraries\Client\v3.0\FSharp.Core.dll</HintPath>
+      <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\.NETPortable\2.3.5.1\FSharp.Core.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.Expression.Interactions" />
     <Reference Include="mscorlib" />

@@ -1,13 +1,13 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApplication.Web", "StocksApplication.Web\StocksApplication.Web.csproj", "{7BF10EC2-81D9-4B50-A6FE-865A0572166C}"
-EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "StocksServiceLogics", "StocksServiceLogics\StocksServiceLogics.fsproj", "{06EBDB04-1C09-4A31-943A-FC2E7BE2A410}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Server", "Server", "{E6F83355-3F1C-498B-9FD9-A55CEBEEACEB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SilverlightClient", "SilverlightClient", "{A96B9210-131D-4441-B0C0-B61649C3FB11}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StocksApplication.Web", "StocksApplication.Web\StocksApplication.Web.csproj", "{7BF10EC2-81D9-4B50-A6FE-865A0572166C}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "StocksServiceLogics", "StocksServiceLogics\StocksServiceLogics.fsproj", "{06EBDB04-1C09-4A31-943A-FC2E7BE2A410}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "StocksApplicationViewModel", "StocksApplicationViewModel\StocksApplicationViewModel.fsproj", "{EF6B852C-D89A-4312-B67C-9F4EA619D01E}"
 EndProject
@@ -40,9 +40,9 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{7BF10EC2-81D9-4B50-A6FE-865A0572166C} = {E6F83355-3F1C-498B-9FD9-A55CEBEEACEB}
+		{06EBDB04-1C09-4A31-943A-FC2E7BE2A410} = {E6F83355-3F1C-498B-9FD9-A55CEBEEACEB}
 		{EF6B852C-D89A-4312-B67C-9F4EA619D01E} = {A96B9210-131D-4441-B0C0-B61649C3FB11}
 		{9EA20395-FA73-4AE8-8D29-BD4E87838B39} = {A96B9210-131D-4441-B0C0-B61649C3FB11}
-		{06EBDB04-1C09-4A31-943A-FC2E7BE2A410} = {E6F83355-3F1C-498B-9FD9-A55CEBEEACEB}
-		{7BF10EC2-81D9-4B50-A6FE-865A0572166C} = {E6F83355-3F1C-498B-9FD9-A55CEBEEACEB}
 	EndGlobalSection
 EndGlobal

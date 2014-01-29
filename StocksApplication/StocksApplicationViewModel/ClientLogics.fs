@@ -26,7 +26,7 @@ let internal unjson<'t> (jsonString:string)  : 't =
 let mutable callresult = Seq.empty
 
 let internal fetchAsync (url : Uri) trigger = 
-    let req = WebRequest.CreateHttp url
+    let req = HttpWebRequest.CreateHttp url
     req.CookieContainer <- new CookieContainer()
     let asynccall =
         async{
